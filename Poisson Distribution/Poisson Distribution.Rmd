@@ -1,0 +1,15 @@
+#Poisson distribution
+
+#Question 1: If there are twelve cars crossing a bridge per minute on average, find the probability of having seventeen or more cars crossing the bridge in a particular minute.  
+
+#Steps : 
+
+#1) Investigate the ppois() distribution function using R's help function. 2) From the question decide the right values to be set for x and lambda and the lower.tail 3) Calculate the probability of having sixteen or less cars crossing the bridge in a particular minute. 
+
+# The probability of having sixteen or less cars crossing the bridge in a particular minute is given by the function ppois. 
+ppois(16, lambda=12)   # lower tail 
+
+# Hence the probability of having seventeen or more cars crossing the bridge in a minute is in the upper tail of the probability density function. 
+ppois(16, lambda=12, lower=FALSE)   # upper tail 
+
+# The probability of having seventeen or more cars crossing the bridge for any given minute is 10.1%

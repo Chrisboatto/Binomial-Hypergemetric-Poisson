@@ -1,0 +1,11 @@
+#Hypergeometric distribution
+
+#We are working at a forest conservation agency and our task is to tag a population of endangered deer to prevent illegal hunting. We know that the forest has approximately 400 deer. Last week, we have captured 100 of the deer and tagged, and released them into the wild. This week we have captured 125 deer. What is the probability that we have captured 30 deer that were captured last week.  (Assume that the recaptured deer are equally likely to be caught and they do not learn to avoid humans) 
+#. You can either use the formula from videos or dhyper() function (takes 4 values)  
+ 
+
+choose(100,30) * choose(300,95)/choose(400,125)
+# We have 100 successes, we want to get 30 of those "successes". We have 95 failures, we want to get those from rest of the population. 
+# We then divide by the total of different choices we can have 
+
+dhyper(30, 100, 300, 125)
